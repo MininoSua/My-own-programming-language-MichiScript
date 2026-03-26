@@ -1,0 +1,267 @@
+miau Ejemplo 1: Hola Mundo
+traer "¡Hola Michis!"
+
+miau Ejemplo 2: Operaciones básicas
+x = 10
+y = 3
+traer "x + y = " + (x + y)
+traer "x * y = " + (x * y)
+traer "x ^ y = " + (x ^ y)
+
+miau Ejemplo 3: Tabla de multiplicar
+traer ""
+traer "Tabla del 7:"
+para i en rango(1, 11) {
+    resultado = 7 * i
+    traer "7 x " + i + " = " + resultado
+}
+
+miau Ejemplo 4: Números pares e impares
+traer ""
+traer "Números pares del 1 al 20:"
+para i en rango(1, 21) {
+    si i % 2 == 0 {
+        traer i
+    }
+}
+
+miau Ejemplo 5: Función - Factorial
+traer ""
+traer "Factorial:"
+
+funcion factorial(n) {
+    si n <= 1 {
+        retorna 1
+    }
+    retorna n * factorial(n - 1)
+}
+
+para i en rango(1, 6) {
+    resultado = factorial(i)
+    traer i + "! = " + resultado
+}
+
+miau Ejemplo 6: Fibonacci
+traer ""
+traer "Fibonacci (recursivo):"
+
+funcion fib(n) {
+    si n <= 1 {
+        retorna n
+    }
+    retorna fib(n - 1) + fib(n - 2)
+}
+
+para i en rango(10) {
+    traer fib(i)
+}
+
+miau Ejemplo 7: Procesamiento de listas
+traer ""
+traer "Procesamiento de listas:"
+
+numeros = [3, 1, 4, 1, 5, 9, 2, 6]
+suma = 0
+contador = 0
+
+para num en numeros {
+    suma = suma + num
+    contador = contador + 1
+}
+
+promedio = suma / contador
+
+traer "Lista: " + texto(numeros)
+traer "Suma: " + suma
+traer "Cantidad: " + contador
+traer "Promedio: " + promedio
+traer "Máximo: " + max(numeros[0], numeros[1], numeros[2])
+
+miau Ejemplo 8: Diccionarios
+traer ""
+traer "Trabajar con diccionarios:"
+
+gato = {
+    nombre: "Whiskers",
+    edad: 5,
+    raza: "Persa",
+    color: "blanco"
+}
+
+traer "Información del gato:"
+traer "  Nombre: " + gato["nombre"]
+traer "  Edad: " + gato["edad"]
+traer "  Raza: " + gato["raza"]
+traer "  Color: " + gato["color"]
+
+miau Ejemplo 9: Funciones como parámetros
+traer ""
+traer "Funciones de orden superior:"
+
+funcion aplicar_dos_veces(fn, valor) {
+    resultado = fn(valor)
+    retorna fn(resultado)
+}
+
+funcion doble(x) {
+    retorna x * 2
+}
+
+resultado = aplicar_dos_veces(doble, 3)
+traer "Doble(doble(3)) = " + resultado
+
+miau Ejemplo 10: Búsqueda en lista
+traer ""
+traer "Búsqueda:"
+
+numeros = [10, 20, 30, 40, 50, 60]
+objetivo = 30
+
+funcion buscar(lista, valor) {
+    para i en rango(longitud(lista)) {
+        si lista[i] == valor {
+            retorna i
+        }
+    }
+    retorna -1
+}
+
+posicion = buscar(numeros, objetivo)
+
+si posicion != -1 {
+    traer "Encontrado " + objetivo + " en posición " + posicion
+} sino {
+    traer objetivo + " no encontrado"
+}
+
+miau Ejemplo 11: Verificación de palíndromo
+traer ""
+traer "Palíndromo:"
+
+funcion es_palindromo(texto) {
+    invertido = texto.invertir()
+    retorna texto == invertido
+}
+
+palabras = ["ama", "perro", "radar", "gato"]
+
+para palabra en palabras {
+    si es_palindromo(palabra) {
+        traer palabra + " ES palíndromo"
+    } sino {
+        traer palabra + " NO es palíndromo"
+    }
+}
+
+miau Ejemplo 12: Contar vocales
+traer ""
+traer "Contar vocales:"
+
+funcion contar_vocales(texto) {
+    vocales = "aeiouáéíóú"
+    contador = 0
+    
+    para char en texto.minuscula() {
+        si vocales.contiene(char) {
+            contador = contador + 1
+        }
+    }
+    
+    retorna contador
+}
+
+phrase = "MichiScript es el mejor lenguaje para programar"
+cantidad = contar_vocales(phrase)
+traer "Frase: '" + phrase + "'"
+traer "Vocales: " + cantidad
+
+miau Ejemplo 13: Clase - Contador
+traer ""
+traer "Programación orientada a objetos:"
+
+gatito Contador {
+    funcion __inicializar(inicio = 0) {
+        esto.valor = inicio
+    }
+    
+    funcion incrementar() {
+        esto.valor = esto.valor + 1
+    }
+    
+    funcion decrementar() {
+        esto.valor = esto.valor - 1
+    }
+    
+    funcion obtener() {
+        retorna esto.valor
+    }
+    
+    funcion mostrar() {
+        traer "Contador: " + esto.valor
+    }
+}
+
+contador = Contador(10)
+contador.mostrar()
+contador.incrementar()
+contador.incrementar()
+contador.mostrar()
+
+miau Ejemplo 14: Números primos
+traer ""
+traer "Números primos:"
+
+funcion es_primo(n) {
+    si n < 2 {
+        retorna falso
+    }
+    
+    para i en rango(2, n) {
+        si n % i == 0 {
+            retorna falso
+        }
+    }
+    
+    retorna verdadero
+}
+
+traer "Primos del 1 al 30:"
+primos = 0
+
+para i en rango(1, 31) {
+    si es_primo(i) {
+        traer i
+        primos = primos + 1
+    }
+}
+
+traer "Total: " + primos + " números primos"
+
+miau Ejemplo 15: Selección con comprensión simulada
+traer ""
+traer "Procesamiento avanzado:"
+
+funcion filtrar(lista, condicion) {
+    resultado = []
+    
+    para elemento en lista {
+        si condicion(elemento) {
+            resultado.agregar(elemento)
+        }
+    }
+    
+    retorna resultado
+}
+
+numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+es_par = funcion(x) { retorna x % 2 == 0 }
+
+pares = filtrar(numeros, es_par)
+traer "Pares: " + texto(pares)
+
+miau Resumen final
+traer ""
+traer "╔════════════════════════════════════╗"
+traer "║  ¡Ejemplos completados! 🐱         ║"
+traer "║  MichiScript v1.0.0                ║"
+traer "╚════════════════════════════════════╝"
