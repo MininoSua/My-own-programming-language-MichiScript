@@ -27,7 +27,7 @@ Modern IDE: A custom Dark Mode IDE (Catppuccin theme) built with support for tou
 
 # 🐱 MichiScript v2
 <p align="center">
-  <img src="img/captura.png" width="300">
+  <img src="img/Captura.png" width="300">
 </p>
 
 🚀 Getting Started
