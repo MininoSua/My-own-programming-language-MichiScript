@@ -474,7 +474,7 @@ El compilador soporta todas las características principales: funciones, clases,
 
 Para preguntas o contribuciones:
 - GitHub: https://github.com/michiscript/
-- Email: hello@michiscript.dev
+- Email: sonicosan0@gmail.com
 - Documentación: https://michiscript.dev/
 
 ---
