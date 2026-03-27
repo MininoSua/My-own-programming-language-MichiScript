@@ -1,4 +1,4 @@
-# 🐱 MichiScript v2
+# 🐱 MichiScript v1.3
 <p align="center">
   <img src="img/logo.png" width="300">
 </p>
@@ -6,7 +6,7 @@
 ### The first cat-themed programming language with Gemini AI integration.
 
 
-🐾 MichiScript v1.1.0 (PLS the functions and variables in spanish bcz that how i programmed it sorry for my grammar)
+🐾 MichiScript v1.3.0 (PLS the functions and variables in spanish bcz that how i programmed it sorry for my grammar)
 
 MichiScript is a dynamic, interpreted programming language with a cat-inspired theme. It is designed to be simple, readable, and fun for developers who want to code with a "feline" touch. Built entirely in Python, it features a complete compiler/interpreter architecture including a Lexer, Parser, and AST-based Evaluator. 
 (Also maybe some files are outdated bcz the project follows a fast-paced update cycle)
@@ -25,7 +25,7 @@ Michi-GPT Assistant: An integrated helper logic to assist with coding questions.
 
 Modern IDE: A custom Dark Mode IDE (Catppuccin theme) built with support for touch devices.
 
-# 🐱 MichiScript v2
+# 🐱 MichiScript v1.3
 <p align="center">
   <img src="img/Captura.png" width="300">
 </p>
@@ -40,11 +40,7 @@ No external dependencies are required for the core language.
 
 Installation
 
-Clone the repository and run the integrated IDE:
-
-git clone [https://github.com/YOUR_USERNAME/MichiScript.git](https://github.com/YOUR_USERNAME/MichiScript.git)
-cd MichiScript
-python michiscript_ide_pro.py
+Download the latest release and open it with your navegator (i think that it dosent work in opera)
 
 
 📖 Syntax Guide
@@ -80,23 +76,6 @@ funcion greet(name) {
 }
 
 greet("Human")
-
-
-🧊 Advanced Capabilities
-
-3.D Graphics Engine
-
-Launch a rotating 3D cube directly from your script:
-
-renderizar_cubo_3d()
-
-
-File Management
-
-escribir_archivo("diary.txt", "Today I caught a laser pointer.")
-si existe_archivo("temp.log") {
-    borrar_archivo("temp.log")
-}
 
 
 🛠️ Project Structure
