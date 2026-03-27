@@ -1,6 +1,6 @@
 # 🐱 MichiScript v2
 <p align="center">
-  <img src="img/Gemini_Generated_Image_eniivxeniivxenii" width="300">
+  <img src="img/logo.png" width="300">
 </p>
 
 ### The first cat-themed programming language with Gemini AI integration.
