@@ -25,6 +25,11 @@ Michi-GPT Assistant: An integrated helper logic to assist with coding questions.
 
 Modern IDE: A custom Dark Mode IDE (Catppuccin theme) built with support for touch devices.
 
+# 🐱 MichiScript v2
+<p align="center">
+  <img src="img/captura.png" width="300">
+</p>
+
 🚀 Getting Started
 
 Prerequisites
