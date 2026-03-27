@@ -1,6 +1,6 @@
 # 🐱 MichiScript v2
 <p align="center">
-  <img src="https://github.com/MininoSua/My-own-programming-language-MichiScript/blob/main/Gemini_Generated_Image_eniivxeniivxenii.png?raw=true" width="200">
+  <img src="img/Gemini_Generated_Image_eniivxeniivxenii.png" width="200">
 </p>
 
 ### The first cat-themed programming language with Gemini AI integration.
