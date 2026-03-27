@@ -1,6 +1,7 @@
-🐾 MichiScript v1.0.0 (PLS the functions and variables in spanish bcz that how i programmed it sorry for my grammar)
+🐾 MichiScript v1.1.0 (PLS the functions and variables in spanish bcz that how i programmed it sorry for my grammar)
 
-MichiScript is a dynamic, interpreted programming language with a cat-inspired theme. It is designed to be simple, readable, and fun for developers who want to code with a "feline" touch. Built entirely in Python, it features a complete compiler/interpreter architecture including a Lexer, Parser, and AST-based Evaluator.
+MichiScript is a dynamic, interpreted programming language with a cat-inspired theme. It is designed to be simple, readable, and fun for developers who want to code with a "feline" touch. Built entirely in Python, it features a complete compiler/interpreter architecture including a Lexer, Parser, and AST-based Evaluator. 
+(Also maybe some files are outdated bcz the project follows a fast-paced update cycle)
 
 ✨ Key Features
 
